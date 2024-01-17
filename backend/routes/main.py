@@ -16,4 +16,5 @@ async def detect(
     # Run the model on the image
 
     # Return the result
+    result = None
     return {"result": result}
