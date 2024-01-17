@@ -3,7 +3,7 @@ from fastapi import APIRouter, File
 router = APIRouter(
     prefix="/api/detect",
     tags=["detect"],
-    responses={404: {"description": "The requested page was not found"}},
+    responses={404: {"description": "The requested url was not found"}},
 )
 
 
