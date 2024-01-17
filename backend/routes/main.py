@@ -12,4 +12,7 @@ async def detect(
         img: File = File(...),
 ):
     # Base 64 decode the image
+
+    # Run the model on the image
+
     return {"message": "Hello World"}
