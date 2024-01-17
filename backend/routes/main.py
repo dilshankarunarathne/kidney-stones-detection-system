@@ -9,6 +9,6 @@ router = APIRouter(
 
 @router.post("/")
 async def detect(
-        
+        img: File = File(...),
 ):
     return {"message": "Hello World"}
