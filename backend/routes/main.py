@@ -7,4 +7,5 @@ router = APIRouter(
 )
 
 
+@router.post("/")
 
