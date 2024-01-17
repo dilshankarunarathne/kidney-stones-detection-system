@@ -34,65 +34,6 @@ kidney stones in pictures of the kidneys, helping doctors identify and treat the
 The primary goal of this project is to develop an automated system that can accurately detect the presence 
 of kidney stones in ultrasound medical images.
 
-## Installation
-
-### Prerequisites
-
-- Python 3.8 or higher
-- pip 20.0 or higher
-- fastapi
-- uvicorn
-- pydantic
-- jose
-- passlib
-- mysql
-
-### Installation Steps
-
-1. Clone the repository
-
-```bash
-git clone https://github.com/dilshankarunarathne/secure-fastapi-template.git
-```
-
-2. Install the dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Create a MySQL database
-
-```bash
-mysql -u root -p
-```
-
-```sql
-CREATE DATABASE fastapi;
-```
-
-4. Create a `.env` file in the root directory and add the following environment variables
-
-```bash
-MYSQL_USER="your mysql user"
-MYSQL_PASSWORD="your mysql password"
-MYSQL_HOST="localhost"
-MYSQL_DATABASE="fastapi"
-MYSQL_PORT=3306
-```
-
-5. Run the project
-
-```bash
-uvicorn main:app --reload
-```
-
-6. Open the local URL in a browser to access the Swagger UI
-
-```bash
-http://127.0.0.1:8000/auth/login
-```
-
 ## Contributing
 
 If you'd like to contribute to this project, please check the contribution guidelines for more information.
