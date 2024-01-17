@@ -1,0 +1,15 @@
+### Authorization by token, part 1. Retrieve and save token.
+POST http://127.0.0.1:8000/api/auth/login
+Content-Type: application/json
+
+{
+  "token": "my-secret-token"
+}
+
+> {% client.global.set("auth_token", response.body.json.token); %}
+
+### Authorization by token, part 2. Use token to authorize.
+GET http://127.0.0.1:8000/api/
+Authorization: Bearer {{auth_token}}
+
+###
