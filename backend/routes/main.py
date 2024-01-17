@@ -11,5 +11,5 @@ router = APIRouter(
 async def detect(
         img: File = File(...),
 ):
-    # Base 64
+    # Base 64 decode the image
     return {"message": "Hello World"}
