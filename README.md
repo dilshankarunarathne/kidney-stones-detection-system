@@ -1,7 +1,6 @@
 # Kidney Stones Detection System Through AI-Enhanced Image Processing
 
-The main objective of this project is to detect the kidney stone from the digital 
-ultrasound image of the kidney by performing various image processing techniques. 
+The main objective of this project is to detect the kidney stone from the digital ultrasound image of the kidney by performing various image processing techniques. 
 By utilizing advanced machine learning algorithms and image processing techniques.
 
 [![Version](https://img.shields.io/badge/version-1.0-brightgreen.svg)](https://pypi.org/project/ad-topic-recommender/)
