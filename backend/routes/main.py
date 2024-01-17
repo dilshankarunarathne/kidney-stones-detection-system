@@ -8,5 +8,7 @@ router = APIRouter(
 
 
 @router.post("/")
-async def detect():
+async def detect(
+        
+):
     return {"message": "Hello World"}
