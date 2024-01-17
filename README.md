@@ -10,8 +10,8 @@ algorithms and image processing techniques.
 ## Table of Contents
 
 - [Description](#description)
-- [Installation](#installation)
-- [Contributing](#contributing)
+- [Overview](#overview)
+- [Problem Statement](#problem)
 - [License](#license)
 - [Contact Information](#contact-information)
 
