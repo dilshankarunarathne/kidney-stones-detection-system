@@ -23,7 +23,8 @@ user model and CRUD operations for users.
 
 ## Overview
 
-Kidney stones can be painful and dangerous if not detected early. This project aims to make the detection process faster and more accurate by using the power of artificial intelligence. In this project focus to using advanced image processing techniques and machine learning algorithms to analyze ultrasound images of the kidneys and identify any potential stones. It's a smart way of using computer technology to spot kidney stones in pictures of the kidneys, helping doctors identify and treat them faster and more accurately.
+Kidney stones can be painful and dangerous if not detected early. This project aims to make the detection 
+process faster and more accurate by using the power of artificial intelligence. In this project focus to using advanced image processing techniques and machine learning algorithms to analyze ultrasound images of the kidneys and identify any potential stones. It's a smart way of using computer technology to spot kidney stones in pictures of the kidneys, helping doctors identify and treat them faster and more accurately.
 Problem statement or Project goal
 The primary goal of this project is to develop an automated system that can accurately detect the presence of kidney stones in ultrasound medical images.
 
