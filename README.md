@@ -29,7 +29,7 @@ using advanced image processing techniques and machine learning algorithms to an
 of the kidneys and identify any potential stones. It's a smart way of using computer technology to spot 
 kidney stones in pictures of the kidneys, helping doctors identify and treat them faster and more accurately.
 
-Problem Statement 
+## Problem Statement 
 The primary goal of this project is to develop an automated system that can accurately detect the presence of kidney stones in ultrasound medical images.
 
 ## Installation
