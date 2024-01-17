@@ -1,4 +1,4 @@
-# FastAPI Project Template
+# Kidney Stones Detection System Through AI-Enhanced Image Processing
 
 The REST API template repository for a FastAPI back-end project.
 
