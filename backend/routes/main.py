@@ -16,4 +16,4 @@ async def detect(
     # Run the model on the image
 
     # Return the result
-    return {"message": "Hello World"}
+    return {"result": "Hello World"}
