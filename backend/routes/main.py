@@ -7,9 +7,9 @@ router = APIRouter(
 )
 
 
-@router.post("/")
+@router.post("")
 async def detect(
-        img: File = File(...),
+        image: UploadFile = File(...)
 ):
     # Base 64 decode the image
 
