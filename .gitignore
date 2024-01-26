@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 
 ml/dataset
+ml/ct-ori-dataset
 
 .idea
 
