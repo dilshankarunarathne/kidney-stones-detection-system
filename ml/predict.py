@@ -31,3 +31,6 @@ top_k_indices = predictions[0].argsort()[-5:][::-1]
 
 # Get the classes of the top k predictions
 top_k_classes = label_maker.inverse_transform(top_k_indices)
+
+# print("The top predictions are:", top_k_classes)
+print("The top predictions are:", top_k_classes)
