@@ -30,4 +30,11 @@ def predict_and_plot(img):
     # Convert BytesIO to PIL Image
     image = Image.open(buf)
 
+    # Convert PIL Image to byte array
+    byte_arr = io.BytesIO()
+    image.save(byte_arr, format='JPEG')
+
+    # Encode byte array to base64 string
+    encoded_image = base64.b64encode(byte_arr.getvalue()).decode('utf-8')
+
     return predicted_label, image
