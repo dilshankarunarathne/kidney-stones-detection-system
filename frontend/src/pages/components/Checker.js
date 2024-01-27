@@ -21,7 +21,7 @@ export default function MediaCard() {
         </Typography>
       </CardContent>
       <Box sx={{ width: "100%", display: "flex", justifyContent: "center" }}>
-        <FileUploader />
+        <FileUploader setApiResponse={setApiResponse} />
       </Box>
     </Card>
   );
