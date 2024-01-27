@@ -16,6 +16,7 @@ from tensorflow.keras.layers import Conv2D, MaxPooling2D
 from tensorflow.keras.layers import GlobalAveragePooling2D
 
 loaded_model = tf.keras.models.load_model("model.h5")
+label_to_class_name =
 
 img = cv2.imread('test.jpg')
 plt.imshow(img)
