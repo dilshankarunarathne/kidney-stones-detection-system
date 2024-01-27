@@ -1,8 +1,8 @@
-# Python
 from keras.models import load_model
-from keras.preprocessing import image
-from keras.applications.vgg16 import preprocess_input
+from keras.utils import load_img, img_to_array
+from tensorflow.keras import backend as K
 import numpy as np
+from keras.applications.vgg16 import preprocess_input
 import cv2
 import tensorflow as tf
 
@@ -11,8 +11,8 @@ model = load_model('vgg16.h5')
 
 # Load the image
 img_path = 'test.jpg'
-img = image.load_img(img_path, target_size=(224, 224))
-x = image.img_to_array(img)
+img = load_img(img_path, target_size=(224, 224))
+x = img_to_array(img)
 x = np.expand_dims(x, axis=0)
 x = preprocess_input(x)
 
