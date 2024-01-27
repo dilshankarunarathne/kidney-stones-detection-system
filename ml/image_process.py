@@ -18,6 +18,15 @@ import matplotlib.pyplot as plt
 # Load the model
 model = load_model('vgg16.h5')
 
+# Get the vgg16 base model from your model
+base_model = model.get_layer('vgg16')
+
+# Get the names of the layers in the base model
+layer_names = [layer.name for layer in base_model.layers]
+
+# Print the layer names
+print(layer_names)
+
 # Define the last conv layer
 last_conv_layer_name = "block5_conv3"
 
@@ -65,8 +74,7 @@ def make_gradcam_heatmap(img_array, model, last_conv_layer_name, pred_index=None
 preds = model.predict(img_array)
 
 # Generate class activation heatmap
-heatmap = make_gradcam_heatmap(img_array, model, last_conv_layer_name)
-
+heatmap = make_gradcam_heatmap(img_array, model, 'vgg16/block5_conv3')
 # Display heatmap
 plt.matshow(heatmap)
 plt.show()
