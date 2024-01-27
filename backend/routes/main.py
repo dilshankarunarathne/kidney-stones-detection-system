@@ -1,3 +1,4 @@
+import cv2
 from fastapi import APIRouter, File, UploadFile
 
 from backend.services.image_service import predict_and_plot
