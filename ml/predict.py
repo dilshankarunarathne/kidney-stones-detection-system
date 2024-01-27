@@ -24,4 +24,5 @@ plt.show()
 resize = tf.image.resize(img, (150,150))
 yhat = loaded_model.predict(np.expand_dims(resize/255, 0))
 max_index = np.argmax(yhat)
-label_to_class_name[max_index]
+
+print(label_to_class_name[max_index])
