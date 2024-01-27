@@ -30,7 +30,9 @@ with tf.GradientTape() as tape:
     tape.watch(last_conv_layer_output)
     class_output = model.output[:, class_idx]
 
+# Get the gradient and the output of the last convolutional layer
 grads = tape.gradient(class_output, last_conv_layer_output)
+conv_layer_output_value = tf.keras.backend.get_value(last_conv_layer_output)
 pooled_grads = tf.reduce_mean(grads, axis=(0, 1, 2))
 
 # Compute the dot product
