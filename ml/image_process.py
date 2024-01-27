@@ -26,7 +26,7 @@ class_idx = np.argmax(preds[0])
 class_output = model.output[:, class_idx]
 
 with tf.GradientTape() as tape:
-    last_conv_layer_output = tf.convert_to_tensor(tf.keras.backend.get_value(last_conv_layer.output))
+    last_conv_layer_output = tf.convert_to_tensor(last_conv_layer.output)
     tape.watch(last_conv_layer_output)
     class_output = model.output[:, class_idx]
 
