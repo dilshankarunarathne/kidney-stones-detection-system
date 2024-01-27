@@ -6,6 +6,8 @@ __pycache__/
 ml/dataset
 ml/ct-ori-dataset
 
+frontend/node_modules
+
 .idea
 
 # C extensions
