@@ -158,3 +158,4 @@ cython_debug/
 ml/vgg16.h5
 ml/test.jpg
 ml/model.h5
+backend/bin/model.h5
