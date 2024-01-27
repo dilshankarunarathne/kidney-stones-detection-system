@@ -5,7 +5,7 @@ import numpy as np
 import tensorflow as tf
 from PIL import Image
 
-loaded_model = tf.keras.models.load_model("../bin/model.h5")
+loaded_model = tf.keras.models.load_model("backend/bin/model.h5")
 label_to_class_name = {0: 'Cyst', 1: 'Normal', 2: 'Stone', 3: 'Tumor'}
 
 
