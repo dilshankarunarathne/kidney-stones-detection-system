@@ -1,12 +1,3 @@
-from keras.models import load_model
-from keras.utils import load_img, img_to_array
-from tensorflow.keras import backend as K
-import numpy as np
-from keras.applications.vgg16 import preprocess_input
-import cv2
-import tensorflow as tf
-
-
 import cv2
 import tensorflow as tf
 from tensorflow.keras.models import load_model
