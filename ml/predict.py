@@ -8,8 +8,8 @@ import numpy as np
 model = load_model('vgg16.h5')
 
 # Load the label maker
-# with open('label_maker.pkl', 'rb') as f:
-#     label_maker = pickle.load(f)
+with open('label_maker.pkl', 'rb') as f:
+    label_maker = pickle.load(f)
 
 # Load an image file to predict on
 img = image.load_img('test.jpg', target_size=(224, 224))
@@ -30,7 +30,4 @@ predictions = model.predict(x)
 top_k_indices = predictions[0].argsort()[-5:][::-1]
 
 # Get the classes of the top k predictions
-# top_k_classes = label_maker.inverse_transform(top_k_indices)
-
-# print("The top predictions are:", top_k_classes)
-print("The top predictions are:", top_k_indices)
+top_k_classes = label_maker.inverse_transform(top_k_indices)
