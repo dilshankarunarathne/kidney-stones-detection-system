@@ -8,14 +8,11 @@ import io
 loaded_model = tf.keras.models.load_model("../bin/model.h5")
 label_to_class_name = {0: 'Cyst', 1: 'Normal', 2: 'Stone', 3: 'Tumor'}
 
-def predict_and_plot(img_data):
-    # Convert the image data to a numpy array
-    nparray = np.fromstring(img_data, np.uint8)
-    img = cv2.imdecode(nparray, cv2.IMREAD_COLOR)
 
+def predict_and_plot(img):
     # Resize the image and predict the label
-    resize = tf.image.resize(img, (150,150))
-    yhat = loaded_model.predict(np.expand_dims(resize/255, 0))
+    resize = tf.image.resize(img, (150, 150))
+    yhat = loaded_model.predict(np.expand_dims(resize / 255, 0))
     max_index = np.argmax(yhat)
     predicted_label = label_to_class_name[max_index]
 
