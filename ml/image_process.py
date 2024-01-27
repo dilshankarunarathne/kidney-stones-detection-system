@@ -5,6 +5,7 @@ import numpy as np
 import cv2
 import tensorflow as tf
 
+
 # Load the model
 model = load_model('vgg16.h5')
 
@@ -18,15 +19,20 @@ x = np.expand_dims(x, axis=0)
 vgg16_model = model.get_layer('vgg16')
 last_conv_layer = vgg16_model.get_layer('block5_conv3')
 
-# Get the class index
-preds = model.predict(x)
-class_idx = np.argmax(preds[0])
+# Create a new model that outputs the last convolutional layer's output
+output_model = tf.keras.Model(inputs=model.input, outputs=last_conv_layer.output)
 
-# Get the weights of the last dense layer
-class_output = model.output[:, class_idx]
+# Use this model to predict on your input
+last_conv_layer_output = output_model.predict(x)
 
 with tf.GradientTape() as tape:
-    last_conv_layer_output = tf.convert_to_tensor(last_conv_layer.output)
+    # Get the class index
+    preds = model.predict(x)
+    class_idx = np.argmax(preds[0])
+
+    # Get the weights of the last dense layer
+    class_output = model.output[:, class_idx]
+
     tape.watch(last_conv_layer_output)
     class_output = model.output[:, class_idx]
 
