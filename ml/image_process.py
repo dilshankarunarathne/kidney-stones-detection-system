@@ -14,11 +14,13 @@ model = load_model('vgg16.h5')
 
 from keras.models import Model
 
+from keras.models import Model
+
 # Get the output of the last layer of the base model
-last_layer = base_model.get_layer(index=-1).output
+last_layer = base_model.layers[-1].output
 
 # Create a new output layer that outputs both the final predictions and the last layer's output
-new_output_layer = [model.output, last_layer]
+new_output_layer = [model.layers[-1].output, last_layer]
 
-# Create a new model that uses the same input as the original model but outputs the new output layer
-new_model = Model(inputs=model.input, outputs=new_output_layer)
+# Create a new model that uses the same input as the base model but outputs the new output layer
+new_model = Model(inputs=base_model.input, outputs=new_output_layer)
