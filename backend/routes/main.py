@@ -20,6 +20,7 @@ async def detect(
         img = cv2.imdecode(nparray, cv2.IMREAD_COLOR)
 
     # Run the model on the image
+    predicted_label, image = predict_and_plot(img)
 
     # Return the result
     result = None
