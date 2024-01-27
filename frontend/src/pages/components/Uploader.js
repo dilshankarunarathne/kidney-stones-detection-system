@@ -25,7 +25,7 @@ const PlaceholderImage = styled("div")({
   borderRadius: "10px",
 });
 
-const FileUploader = () => {
+const FileUploader = ({ setApiResponse }) => {
   const [uploadedImage, setUploadedImage] = useState(null);
   const [placeholderStyle, setPlaceholderStyle] = useState({ width: "250px", height: "150px" });
 
@@ -42,11 +42,22 @@ const FileUploader = () => {
     }
   }, [uploadedImage]);
 
-  const handleFileChange = (e) => {
+  const handleFileChange = async (e) => {
     const selectedFile = e.target.files[0];
     if (selectedFile) {
       const imageURL = URL.createObjectURL(selectedFile);
       setUploadedImage(imageURL);
+
+      const formData = new FormData();
+      formData.append("image", selectedFile);
+
+      const response = await fetch("http://127.0.0.1:8000/api/detect", {
+        method: "POST",
+        body: formData,
+      });
+
+      const data = await response.json();
+      setApiResponse(data);
     }
   };
 
