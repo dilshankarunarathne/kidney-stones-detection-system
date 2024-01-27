@@ -34,16 +34,16 @@ export default function MediaCard({ apiResponse }) {
         <Typography variant="subtitle1" color="text.secondary" style={{ marginBottom: "16px", marginTop: "10px" }}>
           Check your results
         </Typography>
-      </CardContent>
-      <Box sx={{ width: "60%", display: "flex", justifyContent: "center" }}>
-        <PlaceholderImage style={placeholderStyle}>
-          The Result will be displayed here...
-        </PlaceholderImage>
         {apiResponse && (
           <Typography variant="body1">
             {JSON.stringify(apiResponse)}
           </Typography>
         )}
+      </CardContent>
+      <Box sx={{ width: "60%", display: "flex", justifyContent: "center" }}>
+        <PlaceholderImage style={placeholderStyle}>
+          The Result will be displayed here...
+        </PlaceholderImage>
       </Box>
     </Card>
   );
