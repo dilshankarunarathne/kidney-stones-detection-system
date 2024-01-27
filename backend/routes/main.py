@@ -27,5 +27,4 @@ async def detect(
     predicted_label, image = predict_and_plot(img)
 
     # Return the result
-    result = None
     return {"result": result}
