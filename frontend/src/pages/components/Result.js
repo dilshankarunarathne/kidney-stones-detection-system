@@ -22,7 +22,7 @@ const placeholderStyle = {
   height: "200px", // Adjust height as per your requirement
 };
 
-export default function MediaCard() {
+export default function MediaCard({ apiResponse }) {
   const theme = useTheme();
 
   return (
