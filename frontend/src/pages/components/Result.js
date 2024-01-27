@@ -31,12 +31,14 @@ export default function MediaCard({ apiResponse }) {
         <Typography variant="h4">
           The Result
         </Typography>
-        <Typography variant="subtitle1" color="text.secondary" style={{ marginBottom: "16px", marginTop: "10px" }}>
-          Check your results
-        </Typography>
-        {apiResponse && (
+        {!apiResponse?.prediction && (
+          <Typography variant="subtitle1" color="text.secondary" style={{ marginBottom: "16px", marginTop: "10px" }}>
+            Check your results
+          </Typography>
+        )}
+        {apiResponse && apiResponse.prediction && (
           <Typography variant="body1">
-            {JSON.stringify(apiResponse)}
+            Prediction: {apiResponse.prediction}
           </Typography>
         )}
       </CardContent>
