@@ -43,9 +43,13 @@ export default function MediaCard({ apiResponse }) {
         )}
       </CardContent>
       <Box sx={{ width: "60%", display: "flex", justifyContent: "center" }}>
-        <PlaceholderImage style={placeholderStyle}>
-          The Result will be displayed here...
-        </PlaceholderImage>
+        {apiResponse && apiResponse.image ? (
+          <img src={`data:image/jpeg;base64,${apiResponse.image}`} alt="Result" />
+        ) : (
+          <PlaceholderImage style={placeholderStyle}>
+            The Result will be displayed here...
+          </PlaceholderImage>
+        )}
       </Box>
     </Card>
   );
