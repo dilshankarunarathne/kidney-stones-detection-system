@@ -1,5 +1,5 @@
 // BasicGrid.js
-import React from 'react';
+import React, { useState } from "react";
 import { motion } from 'framer-motion';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -22,6 +22,8 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function BasicGrid() {
+  const [apiResponse, setApiResponse] = useState(null);
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={1}>
@@ -32,7 +34,7 @@ export default function BasicGrid() {
         </Grid>
         <Grid item xs={12} lg={6} md={6}>
           <Item component={motion.div} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
-            <Result />
+            <Result apiResponse={apiResponse} />
           </Item>
         </Grid>
         <Grid item xs={12} lg={3} md={3}>
