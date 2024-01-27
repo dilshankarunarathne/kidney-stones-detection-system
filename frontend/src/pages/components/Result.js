@@ -39,6 +39,11 @@ export default function MediaCard({ apiResponse }) {
         <PlaceholderImage style={placeholderStyle}>
           The Result will be displayed here...
         </PlaceholderImage>
+        {apiResponse && (
+          <Typography variant="body1">
+            {JSON.stringify(apiResponse)}
+          </Typography>
+        )}
       </Box>
     </Card>
   );
