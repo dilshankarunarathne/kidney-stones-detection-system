@@ -1,5 +1,7 @@
 from fastapi import APIRouter, File, UploadFile
 
+from backend.services.image_service import predict_and_plot
+
 router = APIRouter(
     prefix="/api/detect",
     tags=["detect"],
