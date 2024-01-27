@@ -29,7 +29,7 @@ export default function BasicGrid() {
       <Grid container spacing={1}>
         <Grid item xs={12} lg={6} md={6}>
           <Item component={motion.div} initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
-            <Checker />
+            <Checker setApiResponse={setApiResponse} />          
           </Item>
         </Grid>
         <Grid item xs={12} lg={6} md={6}>
