@@ -7,7 +7,6 @@ import Typography from "@mui/material/Typography";
 import FileUploader from "./Uploader";
 
 export default function MediaCard({ setApiResponse }) {
-  const [apiResponse, setApiResponse] = useState(null);
   const theme = useTheme();
 
   return (
