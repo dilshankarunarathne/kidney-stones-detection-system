@@ -1,18 +1,18 @@
 import pickle
 
 from keras.models import load_model
-from keras.preprocessing import image
+import keras.utils as image
 import numpy as np
 
 # Load the model
 model = load_model('vgg16.h5')
 
 # Load the label maker
-with open('label_maker.pkl', 'rb') as f:
-    label_maker = pickle.load(f)
+# with open('label_maker.pkl', 'rb') as f:
+#     label_maker = pickle.load(f)
 
 # Load an image file to predict on
-img = image.load_img('path_to_your_image.jpg', target_size=(224, 224))
+img = image.load_img('test.jpg', target_size=(224, 224))
 
 # Convert the image to a numpy array
 x = image.img_to_array(img)
@@ -30,6 +30,7 @@ predictions = model.predict(x)
 top_k_indices = predictions[0].argsort()[-5:][::-1]
 
 # Get the classes of the top k predictions
-top_k_classes = label_maker.inverse_transform(top_k_indices)
+# top_k_classes = label_maker.inverse_transform(top_k_indices)
 
-print("The top predictions are:", top_k_classes)
+# print("The top predictions are:", top_k_classes)
+print("The top predictions are:", top_k_indices)
