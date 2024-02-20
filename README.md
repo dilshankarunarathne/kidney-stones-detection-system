@@ -37,6 +37,7 @@ of kidney stones in ultrasound medical images.
 ## Installation
 
 1. Clone the repository
+2. Install the required packages
 
 ## Contributing
 
