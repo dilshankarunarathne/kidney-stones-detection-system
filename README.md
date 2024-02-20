@@ -60,6 +60,10 @@ npm install
 ```bash
 cd kidney-stones-detection-system
 cd backend
+uvicorn main:app --reload
+```
+
+```bash
 ```
 
 ## Contributing
