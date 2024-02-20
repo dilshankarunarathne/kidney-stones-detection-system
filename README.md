@@ -96,4 +96,3 @@ For questions or feedback, please contact the author:
 - Email: ceo@altier.tech
 - Website: [http://altier.tech](http://altier.tech)
 - Copyright: © 2022-2024
-
