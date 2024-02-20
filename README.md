@@ -34,6 +34,8 @@ kidney stones in pictures of the kidneys, helping doctors identify and treat the
 The primary goal of this project is to develop an automated system that can accurately detect the presence 
 of kidney stones in ultrasound medical images.
 
+
+
 ## Contributing
 
 If you'd like to contribute to this project, please check the contribution guidelines for more information.
