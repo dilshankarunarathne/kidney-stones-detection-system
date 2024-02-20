@@ -54,7 +54,7 @@ cd frontend
 npm install
 ```
 
-3. Download the dataset/models
+3. Download the dataset and models
 4. Run the application
 
 ```bash
