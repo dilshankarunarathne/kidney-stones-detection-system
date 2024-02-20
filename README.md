@@ -59,6 +59,7 @@ npm install
 
 ```bash
 cd kidney-stones-detection-system
+cd backend
 ```
 
 ## Contributing
