@@ -12,6 +12,7 @@ algorithms and image processing techniques.
 - [Description](#description)
 - [Overview](#overview)
 - [Problem Statement](#problem-statement)
+- [Installation](#installation)
 - [License](#license)
 - [Contact Information](#contact-information)
 
