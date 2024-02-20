@@ -56,7 +56,8 @@ npm install
 
 3. Download the dataset and models
 Dataset: [CT KIDNEY DATASET: Normal-Cyst-Tumor and Stone](https://www.kaggle.com/datasets/nazmul0087/ct-kidney-dataset-normal-cyst-tumor-and-stone)  
-Run the 
+Run the notebooks inside the `ML` directory to train the models and save them.
+
 4. Run the application
 
 ```bash
