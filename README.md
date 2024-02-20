@@ -37,6 +37,10 @@ of kidney stones in ultrasound medical images.
 ## Installation
 
 1. Clone the repository
+```bash
+
+```
+
 2. Install the required packages
 3. Download the dataset/models
 4. Run the application
