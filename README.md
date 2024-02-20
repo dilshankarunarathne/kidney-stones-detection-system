@@ -66,6 +66,7 @@ uvicorn main:app --reload
 ```bash
 cd kidney-stones-detection-system
 cd frontend
+npm start
 ```
 
 ## Contributing
