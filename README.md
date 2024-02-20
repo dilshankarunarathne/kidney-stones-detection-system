@@ -64,6 +64,7 @@ uvicorn main:app --reload
 ```
 
 ```bash
+cd kidney-stones-detection-system
 ```
 
 ## Contributing
