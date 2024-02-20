@@ -43,7 +43,9 @@ git clone https://github.com/dilshankarunarathne/kidney-stones-detection-system.
 
 2. Install the required packages
 ```bash
-
+cd kidney-stones-detection-system
+cd backend
+pip install -r requirements.txt
 ```
 
 3. Download the dataset/models
