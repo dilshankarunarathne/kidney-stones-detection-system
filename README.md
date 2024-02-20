@@ -50,8 +50,8 @@ pip install -r requirements.txt
 
 ```bash
 cd kidney-stones-detection-system
-cd backend
-pip install -r requirements.txt
+cd frontend
+npm install
 ```
 
 3. Download the dataset/models
