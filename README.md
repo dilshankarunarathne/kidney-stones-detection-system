@@ -58,7 +58,7 @@ npm install
 4. Run the application
 
 ```bash
-
+cd kidney-stones-detection-system
 ```
 
 ## Contributing
